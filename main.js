@@ -7,8 +7,8 @@ class myCanvas {
         canvas.height = "500";
         this.moveX = Math.floor(Math.random() * canvas.width);
         this.moveY = Math.floor(Math.random() * canvas.height);
-        this.speedX = 1;
-        this.speedY = 1;
+        this.speedX = 2;
+        this.speedY = 2;
         this.triangleLength = 0;
         this.arrowLength = 40;
 
