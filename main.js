@@ -31,11 +31,13 @@ class myCanvas {
         this.ctx.moveTo(33 + this.moveX, 46 + this.moveY);
         this.ctx.quadraticCurveTo(11 + this.moveX, 60+ this.moveY, 1 + this.moveX, 85 + this.moveY);
         this.ctx.lineWidth = 3;
-        this.ctx.strokeStyle = 'red';
+        this.ctx.strokeStyle = '#0f4c81';
         this.ctx.stroke();
 
         (this.moveX + this.arrowLength > canvas.width || this.moveX < 0) ? this.speedX = -this.speedX: this.speedX;
         this.moveX += this.speedX;
+        (this.moveY + this.arrowLength > canvas.height || this.moveY < 0) ? this.speedY = -this.speedY: this.speedY;
+        this.moveY += this.speedY;
     }
 
 }
